@@ -1,0 +1,392 @@
+[
+  {
+    "id": "PM_KISAN",
+    "name": "PM Kisan Samman Nidhi",
+    "description": "Direct income support of ₹6,000 per year to small and marginal farmer families across India, paid in three equal installments.",
+    "ministry": "Ministry of Agriculture & Farmers Welfare",
+    "benefits": "₹6,000/year direct bank transfer in 3 installments of ₹2,000 each",
+    "apply_link": "https://pmkisan.gov.in",
+    "tags": ["farmer", "agriculture", "income support"],
+    "eligibility": {
+      "occupation": ["farmer", "agriculture"],
+      "max_income": 200000,
+      "land_holding": "less than 2 hectares",
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": null,
+      "states": null
+    }
+  },
+  {
+    "id": "PM_AWAS_RURAL",
+    "name": "Pradhan Mantri Awas Yojana (Gramin)",
+    "description": "Financial assistance for construction of pucca houses for all houseless and those living in kutcha/dilapidated houses in rural areas.",
+    "ministry": "Ministry of Rural Development",
+    "benefits": "₹1.2 lakh (plains) / ₹1.3 lakh (hilly areas) for house construction",
+    "apply_link": "https://pmayg.nic.in",
+    "tags": ["housing", "rural", "construction"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": 300000,
+      "categories": ["sc", "st", "obc", "general"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": null,
+      "residence": "rural",
+      "states": null
+    }
+  },
+  {
+    "id": "UJJWALA",
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "description": "Free LPG connections to women from Below Poverty Line (BPL) households to replace unhealthy cooking fuels.",
+    "ministry": "Ministry of Petroleum and Natural Gas",
+    "benefits": "Free LPG connection + first refill free + EMI facility for stove and refill",
+    "apply_link": "https://pmuy.gov.in",
+    "tags": ["lpg", "women", "bpl", "cooking"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": 100000,
+      "categories": ["sc", "st", "obc", "general"],
+      "gender": ["female"],
+      "min_age": 18,
+      "max_age": null,
+      "bpl": true,
+      "states": null
+    }
+  },
+  {
+    "id": "AYUSHMAN_BHARAT",
+    "name": "Ayushman Bharat PM-JAY",
+    "description": "World's largest health insurance scheme providing coverage up to ₹5 lakh per family per year for secondary and tertiary hospitalization.",
+    "ministry": "Ministry of Health & Family Welfare",
+    "benefits": "₹5 lakh/year health insurance coverage per family",
+    "apply_link": "https://pmjay.gov.in",
+    "tags": ["health", "insurance", "hospital"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": 300000,
+      "categories": ["sc", "st", "obc", "general"],
+      "gender": ["male", "female"],
+      "min_age": 0,
+      "max_age": null,
+      "bpl": true,
+      "states": null
+    }
+  },
+  {
+    "id": "MUDRA_LOAN",
+    "name": "Pradhan Mantri MUDRA Yojana",
+    "description": "Loans up to ₹10 lakh to non-corporate, non-farm small/micro enterprises for business development.",
+    "ministry": "Ministry of Finance",
+    "benefits": "Loans: Shishu (₹50K), Kishor (₹50K-5L), Tarun (₹5L-10L) at low interest rates",
+    "apply_link": "https://mudra.org.in",
+    "tags": ["business", "loan", "self-employment", "entrepreneur"],
+    "eligibility": {
+      "occupation": ["business", "self-employed", "entrepreneur", "shopkeeper", "vendor"],
+      "max_income": 1000000,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": 65,
+      "states": null
+    }
+  },
+  {
+    "id": "SUKANYA_SAMRIDHI",
+    "name": "Sukanya Samriddhi Yojana",
+    "description": "Small savings scheme for the girl child to encourage parents to build a fund for future education and marriage expenses.",
+    "ministry": "Ministry of Finance",
+    "benefits": "7.6% interest rate, tax benefits under Section 80C, maturity at age 21",
+    "apply_link": "https://www.indiapost.gov.in",
+    "tags": ["girl child", "savings", "education", "daughter"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": null,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["female"],
+      "min_age": 0,
+      "max_age": 10,
+      "has_daughter": true,
+      "states": null
+    }
+  },
+  {
+    "id": "SC_SCHOLARSHIP",
+    "name": "Post Matric Scholarship for SC Students",
+    "description": "Financial assistance to SC students for studies at post-matriculation level to enable them to complete higher education.",
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "benefits": "₹1,200 to ₹3,800/month maintenance allowance + course fees",
+    "apply_link": "https://scholarships.gov.in",
+    "tags": ["scholarship", "education", "sc", "student"],
+    "eligibility": {
+      "occupation": ["student"],
+      "max_income": 250000,
+      "categories": ["sc"],
+      "gender": ["male", "female"],
+      "min_age": 15,
+      "max_age": 35,
+      "states": null
+    }
+  },
+  {
+    "id": "ST_SCHOLARSHIP",
+    "name": "Post Matric Scholarship for ST Students",
+    "description": "Scholarship for Scheduled Tribe students pursuing post-matriculation or post-secondary education.",
+    "ministry": "Ministry of Tribal Affairs",
+    "benefits": "Full fee reimbursement + maintenance allowance",
+    "apply_link": "https://scholarships.gov.in",
+    "tags": ["scholarship", "education", "st", "tribal", "student"],
+    "eligibility": {
+      "occupation": ["student"],
+      "max_income": 250000,
+      "categories": ["st"],
+      "gender": ["male", "female"],
+      "min_age": 15,
+      "max_age": 35,
+      "states": null
+    }
+  },
+  {
+    "id": "OBC_SCHOLARSHIP",
+    "name": "Post Matric Scholarship for OBC Students",
+    "description": "Scholarship to Other Backward Classes students to pursue post-matric or post-secondary education.",
+    "ministry": "Ministry of Social Justice and Empowerment",
+    "benefits": "₹1,000 to ₹2,500/month + fee reimbursement",
+    "apply_link": "https://scholarships.gov.in",
+    "tags": ["scholarship", "education", "obc", "student"],
+    "eligibility": {
+      "occupation": ["student"],
+      "max_income": 100000,
+      "categories": ["obc"],
+      "gender": ["male", "female"],
+      "min_age": 15,
+      "max_age": 35,
+      "states": null
+    }
+  },
+  {
+    "id": "PM_SVAMITVA",
+    "name": "SVAMITVA Scheme",
+    "description": "Survey of villages and mapping with improvised technology to provide property rights to residents of rural areas.",
+    "ministry": "Ministry of Panchayati Raj",
+    "benefits": "Property card (title deed) for residential land in rural areas",
+    "apply_link": "https://svamitva.nic.in",
+    "tags": ["property", "rural", "land rights"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": null,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": null,
+      "residence": "rural",
+      "states": null
+    }
+  },
+  {
+    "id": "STARTUP_INDIA",
+    "name": "Startup India Scheme",
+    "description": "Government initiative to build a strong ecosystem for innovation and startups in India, driving sustainable economic growth.",
+    "ministry": "Ministry of Commerce and Industry",
+    "benefits": "Tax exemptions, funding support, fast-track patent filing, mentorship network",
+    "apply_link": "https://startupindia.gov.in",
+    "tags": ["startup", "entrepreneur", "business", "innovation"],
+    "eligibility": {
+      "occupation": ["entrepreneur", "business", "self-employed", "startup"],
+      "max_income": null,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": 45,
+      "states": null
+    }
+  },
+  {
+    "id": "STAND_UP_INDIA",
+    "name": "Stand Up India",
+    "description": "Bank loans between ₹10 lakh to ₹1 crore to at least one SC/ST borrower and one woman borrower per bank branch for greenfield enterprise.",
+    "ministry": "Ministry of Finance",
+    "benefits": "Loans ₹10 lakh to ₹1 crore for greenfield enterprises",
+    "apply_link": "https://www.standupmitra.in",
+    "tags": ["business", "loan", "sc", "st", "women", "entrepreneur"],
+    "eligibility": {
+      "occupation": ["business", "self-employed", "entrepreneur"],
+      "max_income": null,
+      "categories": ["sc", "st", "general"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": 65,
+      "sc_st_or_female": true,
+      "states": null
+    }
+  },
+  {
+    "id": "KISAN_CREDIT_CARD",
+    "name": "Kisan Credit Card (KCC)",
+    "description": "Credit card for farmers to meet agricultural and allied needs with flexible repayment options and low interest rates.",
+    "ministry": "Ministry of Agriculture & Farmers Welfare",
+    "benefits": "Credit limit up to ₹3 lakh at 4% interest rate (after 2% interest subvention)",
+    "apply_link": "https://www.nabard.org",
+    "tags": ["farmer", "credit", "loan", "agriculture"],
+    "eligibility": {
+      "occupation": ["farmer", "agriculture", "fisherman", "animal husbandry"],
+      "max_income": null,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": 75,
+      "states": null
+    }
+  },
+  {
+    "id": "BETI_BACHAO",
+    "name": "Beti Bachao Beti Padhao",
+    "description": "Initiative to address declining child sex ratio and promote welfare and education of the girl child.",
+    "ministry": "Ministry of Women and Child Development",
+    "benefits": "Financial incentives, scholarship, awareness programs for girl child education",
+    "apply_link": "https://wcd.nic.in",
+    "tags": ["girl child", "education", "women empowerment", "daughter"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": 300000,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["female"],
+      "min_age": 0,
+      "max_age": 18,
+      "has_daughter": true,
+      "states": null
+    }
+  },
+  {
+    "id": "NREGA",
+    "name": "Mahatma Gandhi NREGA",
+    "description": "Guarantees 100 days of wage employment per year to rural households whose adult members volunteer for unskilled manual work.",
+    "ministry": "Ministry of Rural Development",
+    "benefits": "100 days guaranteed employment at ₹200-350/day (state-wise), unemployment allowance if work not provided",
+    "apply_link": "https://nrega.nic.in",
+    "tags": ["employment", "rural", "labour", "job", "unskilled"],
+    "eligibility": {
+      "occupation": ["labour", "labourer", "unemployed", "worker", "daily wage"],
+      "max_income": 200000,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": null,
+      "residence": "rural",
+      "states": null
+    }
+  },
+  {
+    "id": "APL_RATION",
+    "name": "National Food Security Act (NFSA) Ration",
+    "description": "Subsidized food grains to eligible households under Priority Households and Antyodaya Anna Yojana categories.",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "benefits": "5kg food grains/person/month at ₹1-3/kg (rice, wheat, coarse grains)",
+    "apply_link": "https://nfsa.gov.in",
+    "tags": ["food", "ration", "subsidy", "bpl"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": 200000,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 0,
+      "max_age": null,
+      "bpl": true,
+      "states": null
+    }
+  },
+  {
+    "id": "PM_SHRAM_YOGI",
+    "name": "PM Shram Yogi Maan-dhan (PM-SYM)",
+    "description": "Pension scheme for unorganised sector workers ensuring minimum assured pension of ₹3,000/month after age 60.",
+    "ministry": "Ministry of Labour and Employment",
+    "benefits": "₹3,000/month pension after 60 years, family pension of 50% on death",
+    "apply_link": "https://maandhan.in",
+    "tags": ["pension", "unorganised worker", "labour", "retirement"],
+    "eligibility": {
+      "occupation": ["labour", "labourer", "worker", "daily wage", "domestic worker", "driver", "street vendor"],
+      "max_income": 180000,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": 40,
+      "states": null
+    }
+  },
+  {
+    "id": "SKILL_INDIA",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+    "description": "Skill development initiative to enable youth to take up industry-relevant skill training and become employable.",
+    "ministry": "Ministry of Skill Development and Entrepreneurship",
+    "benefits": "Free skill training + ₹500/month stipend + placement assistance + certificate",
+    "apply_link": "https://pmkvyofficial.org",
+    "tags": ["skill", "training", "youth", "employment", "certificate"],
+    "eligibility": {
+      "occupation": ["student", "unemployed", "dropout"],
+      "max_income": 300000,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 15,
+      "max_age": 35,
+      "states": null
+    }
+  },
+  {
+    "id": "NARI_SHAKTI",
+    "name": "Nari Shakti Puraskar",
+    "description": "Award and support scheme for women achieving excellence in different fields and contributing to women empowerment.",
+    "ministry": "Ministry of Women and Child Development",
+    "benefits": "₹2 lakh cash award + certificate of excellence + recognition",
+    "apply_link": "https://wcd.nic.in",
+    "tags": ["women", "award", "empowerment", "achievement"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": null,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["female"],
+      "min_age": 25,
+      "max_age": null,
+      "states": null
+    }
+  },
+  {
+    "id": "JEEVAN_JYOTI",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana",
+    "description": "Life insurance scheme offering coverage of ₹2 lakh at nominal annual premium for bank account holders.",
+    "ministry": "Ministry of Finance",
+    "benefits": "₹2 lakh life cover at just ₹436/year premium",
+    "apply_link": "https://jansuraksha.gov.in",
+    "tags": ["insurance", "life insurance", "bank", "low cost"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": 500000,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": 50,
+      "has_bank_account": true,
+      "states": null
+    }
+  },
+  {
+    "id": "SURAKSHA_BIMA",
+    "name": "Pradhan Mantri Suraksha Bima Yojana",
+    "description": "Accidental insurance scheme offering ₹2 lakh accidental death/disability cover at just ₹20/year.",
+    "ministry": "Ministry of Finance",
+    "benefits": "₹2 lakh accidental death cover / ₹1 lakh partial disability at ₹20/year",
+    "apply_link": "https://jansuraksha.gov.in",
+    "tags": ["insurance", "accident", "bank", "low cost"],
+    "eligibility": {
+      "occupation": null,
+      "max_income": 500000,
+      "categories": ["general", "sc", "st", "obc"],
+      "gender": ["male", "female"],
+      "min_age": 18,
+      "max_age": 70,
+      "has_bank_account": true,
+      "states": null
+    }
+  }
+]

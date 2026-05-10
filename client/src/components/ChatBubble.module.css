@@ -1,0 +1,70 @@
+.row    { display:flex; gap:11px; animation:msgIn .28s ease; }
+.botRow { align-self:flex-start; max-width:88%; }
+.userRow{ flex-direction:row-reverse; align-self:flex-end; max-width:82%; }
+
+.av {
+  width:31px; height:31px; border-radius:8px; font-size:15px;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0; align-self:flex-end;
+}
+.avBot  { background:linear-gradient(135deg,var(--saf),#d46800); }
+.avUser { background:var(--blu); }
+
+.body     { display:flex; flex-direction:column; gap:7px; min-width:60px; }
+.bodyUser { align-items:flex-end; }
+
+/* Bubbles */
+.bubble {
+  padding:11px 15px; border-radius:var(--r2);
+  font-size:14px; line-height:1.65; word-break:break-word;
+}
+.bubbleBot {
+  background:var(--bg2); border:1px solid var(--brd);
+  border-bottom-left-radius:4px; color:var(--t1);
+}
+.bubbleUser {
+  background:var(--saf); color:#1A0600;
+  border-bottom-right-radius:4px; font-weight:500;
+}
+.bubbleError {
+  background:rgba(240,64,64,.1); border:1px solid rgba(240,64,64,.3); color:#fca5a5;
+}
+.bubble :global(strong) { font-weight:700; color:var(--saf); }
+.bubbleUser :global(strong) { color:inherit; }
+.bubble :global(em)   { font-style:italic; color:var(--t2); font-size:13px; }
+.bubble :global(code) { font-family:var(--mono); font-size:12px; background:rgba(255,255,255,.07); padding:1px 5px; border-radius:3px; }
+
+/* Profile pill */
+.profPill {
+  padding:8px 12px;
+  background:rgba(16,183,127,.07); border:1px solid rgba(16,183,127,.22);
+  border-radius:var(--r); font-size:12px; color:var(--grn);
+  display:flex; flex-wrap:wrap; gap:5px;
+}
+.pTag {
+  background:rgba(16,183,127,.1); border:1px solid rgba(16,183,127,.2);
+  border-radius:20px; padding:2px 8px; font-size:11px;
+}
+
+/* Missing fields */
+.missingBox {
+  display:flex; align-items:center; gap:7px; padding:8px 12px;
+  background:rgba(245,158,11,.08); border:1px solid rgba(245,158,11,.25);
+  border-radius:var(--r); font-size:12.5px; color:#fcd34d;
+}
+.missingIcon { font-size:14px; flex-shrink:0; }
+.missingBox :global(strong) { color:#fcd34d; }
+
+/* Result badge */
+.resBadge {
+  display:inline-flex; align-items:center; gap:5px;
+  padding:3px 10px; border-radius:20px; font-size:12px; font-weight:600;
+  background:rgba(16,183,127,.1); border:1px solid rgba(16,183,127,.28); color:var(--grn);
+}
+
+/* Scheme list */
+.scList { display:flex; flex-direction:column; gap:7px; }
+
+/* Time */
+.time     { font-size:10px; color:var(--t3); padding:0 3px; }
+.timeUser { text-align:right; }

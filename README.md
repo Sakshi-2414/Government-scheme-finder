@@ -71,9 +71,8 @@ if (gender === "female" && occupation === "student") {
 
 ## 📷 Screenshots
 
-<img width="1920" height="1020" alt="Screenshot 2026-06-04 204151" src="https://github.com/user-attachments/assets/2a4636fc-efa2-471e-9a05-1c8383644e95" />
-<img width="1920" height="1020" alt="Screenshot 2026-06-04 204113" src="https://github.com/user-attachments/assets/1d402357-73d5-436c-a208-8eed5bce2baf" />
-
+<img width="1920" height="1020" alt="Screenshot 2026-06-04 204151" src="https://github.com/user-attachments/assets/b2ba4910-1a19-4cf6-a582-1bec97e49421" />
+<img width="1920" height="1020" alt="Screenshot 2026-06-04 204113" src="https://github.com/user-attachments/assets/1fba7a39-9a1c-4a60-b976-f5f4835cc08e" />
 
 ---
 

@@ -1,221 +1,142 @@
-# 🇮🇳 Government Scheme Eligibility Finder
+# 🏛️ Government Scheme Eligibility Finder
 
-An AI-powered chatbot that helps Indian citizens discover government schemes they are eligible for — using NLP entity extraction, a rule-based eligibility engine, voice input, and a modern ChatGPT-style UI.
-
----
-
-## 📸 Features
-
-| Feature | Details |
-|---|---|
-| 🧠 NLP Processing | Custom Python entity extractor (income, age, gender, caste, occupation) |
-| 🏛️ Rule Engine | 21 realistic government schemes with eligibility rules |
-| 🎤 Voice Input | Web Speech API (Indian English) — click the mic button |
-| 💬 Chatbot UI | ChatGPT-style bubbles, typing indicator, follow-up questions |
-| 📊 Results Panel | Scheme cards with match score, benefits, apply links |
-| 🔍 Entity Panel | Live display of extracted NLP entities |
-| 🔎 Filter & Search | Search/filter matched schemes by keyword or category |
+An intelligent **rule-based system** that helps users discover **government schemes they are eligible for** based on their personal details such as age, income, gender, occupation, and category.
 
 ---
 
-## 🗂️ Project Structure
+## 🚀 Overview
 
+Finding the right government schemes can be confusing due to scattered information and complex eligibility criteria.
+This project simplifies the process by providing a **centralized eligibility checker** powered by a **rule-based logic system**.
+
+👉 Users just input their details, and the system instantly suggests matching schemes.
+
+---
+
+## ✨ Features
+
+* 🔍 **Personalized Scheme Recommendations**
+* ⚙️ **Rule-Based Eligibility Engine**
+* 🧠 **Fast & Deterministic Results (No ML Required)**
+* 📊 **Simple & User-Friendly Interface**
+* 🇮🇳 Focused on **Indian Government Schemes**
+* 🔄 Easily **extendable with new schemes and rules**
+
+---
+
+## 🧩 How It Works
+
+1. User enters details:
+
+   * Age
+   * Gender
+   * Income
+   * Category (General/OBC/SC/ST)
+   * Occupation
+
+2. System applies predefined rules:
+
+   * Each scheme has eligibility conditions
+   * Conditions are checked against user input
+
+3. Output:
+
+   * List of eligible schemes
+   * Explanation of why the user qualifies
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** HTML, CSS, JavaScript *(or React if used)*
+* **Backend:** Node.js *(if applicable)*
+* **Logic:** Rule-Based System (Custom Conditions)
+* **Database:** MongoDB / JSON *(depending on your project)*
+
+---
+
+## 📌 Example Rules
+
+```js
+if (age >= 60 && income < 200000) {
+  schemes.push("Old Age Pension Scheme");
+}
+
+if (gender === "female" && occupation === "student") {
+  schemes.push("Scholarship for Girls");
+}
 ```
-govt-scheme-finder/
-├── client/                    # React frontend (Vite)
-│   ├── src/
-│   │   ├── App.jsx            # Root component
-│   │   ├── components/        # UI components
-│   │   │   ├── Header.jsx
-│   │   │   ├── ChatWindow.jsx
-│   │   │   ├── ChatBubble.jsx
-│   │   │   ├── TypingIndicator.jsx
-│   │   │   ├── InputBar.jsx   # Text + voice input
-│   │   │   ├── EntityPanel.jsx
-│   │   │   ├── SchemesPanel.jsx
-│   │   │   └── SchemeCard.jsx
-│   │   ├── hooks/
-│   │   │   ├── useChat.js     # Chat state management
-│   │   │   └── useVoice.js    # Web Speech API hook
-│   │   └── utils/
-│   │       ├── api.js         # Backend API calls
-│   │       └── format.js      # Text formatting helpers
-│   ├── index.html
-│   ├── vite.config.js
-│   └── package.json
-│
-├── server/
-│   └── app.py                 # Flask REST API
-│
-├── nlp/
-│   └── processor.py           # NLP + Rule engine (pure Python)
-│
-├── data/
-│   └── schemes.json           # 21 government schemes dataset
-│
-├── requirements.txt           # Python dependencies
-├── package.json               # Root scripts
-└── README.md
-```
 
 ---
 
-## ⚙️ Tech Stack
+## 📷 Screenshots
 
-- **Frontend**: React 18 + Vite + CSS Modules
-- **Backend**: Python Flask (REST API)
-- **NLP**: Custom regex pipeline (spaCy-compatible architecture)
-- **Voice**: Web Speech API (browser-native, no API key needed)
-- **Data**: JSON (easily swappable with MongoDB)
+<img width="1920" height="1020" alt="Screenshot 2026-06-04 204151" src="https://github.com/user-attachments/assets/2a4636fc-efa2-471e-9a05-1c8383644e95" />
+<img width="1920" height="1020" alt="Screenshot 2026-06-04 204113" src="https://github.com/user-attachments/assets/1d402357-73d5-436c-a208-8eed5bce2baf" />
+
 
 ---
 
-## 🚀 Installation & Running
+## 🧠 Why Rule-Based System?
 
-### Prerequisites
-- **Node.js** v18+ (for frontend)
-- **Python** 3.9+ (for backend)
-- **pip** (Python package manager)
+* ✅ Transparent decision-making
+* ✅ Easy to debug and maintain
+* ✅ No training data required
+* ✅ Perfect for well-defined eligibility conditions
 
 ---
 
-### Step 1 — Install Python dependencies
+## 📦 Installation
 
 ```bash
-# From project root
-pip install -r requirements.txt
-```
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
 
-### Step 2 — Install frontend dependencies
+# Navigate to project folder
+cd your-repo-name
 
-```bash
-cd client
+# Install dependencies
 npm install
-cd ..
-```
 
-### Step 3 — Start the Python backend
-
-```bash
-cd server
-python app.py
-```
-
-The API will start at **http://localhost:5001**
-
-### Step 4 — Start the React frontend (new terminal)
-
-```bash
-cd client
-npm run dev
-```
-
-The app will open at **http://localhost:3000**
-
----
-
-## 🧪 Testing the App
-
-Open **http://localhost:3000** in Chrome (for voice support).
-
-### Example inputs to try:
-
-| Input | Expected schemes |
-|---|---|
-| `I am a 35 year old SC woman farmer from rural Bihar. Income 80,000 per year.` | PM Kisan, Ujjwala, NREGA, Ayushman Bharat, SC Scholarship |
-| `I am 22 year old OBC male student, income 1.5 lakh` | OBC Scholarship, Skill India, MUDRA |
-| `I am a 40 year old general category woman entrepreneur` | MUDRA, Stand Up India, Startup India, Jeevan Jyoti |
-| `Daily wage labourer, 28 years old, rural village, income 60000` | NREGA, PM-SYM, Ration Card, PMAY Gramin |
-
-### Voice input:
-1. Click the 🎤 microphone button
-2. Speak your situation in English
-3. The text appears automatically and is sent for processing
-
----
-
-## 🔌 API Reference
-
-| Endpoint | Method | Description |
-|---|---|---|
-| `/api/greeting` | GET | Returns welcome message |
-| `/api/process-input` | POST | Process user text, extract entities, match schemes |
-| `/api/get-schemes` | GET | Return all 21 schemes |
-| `/api/scheme/:id` | GET | Get a single scheme by ID |
-| `/api/explain-scheme` | POST | Get conversational explanation of a scheme |
-| `/api/reset` | POST | Reset session |
-| `/api/health` | GET | Health check |
-
-### POST `/api/process-input`
-```json
-{
-  "text": "I am a 30 year old SC farmer with income 1 lakh",
-  "sessionId": "uuid-string"
-}
-```
-
-### Response
-```json
-{
-  "sessionId": "...",
-  "type": "schemes",
-  "message": "Great news! I found 5 schemes...",
-  "entities": {
-    "income": 100000,
-    "age": 30,
-    "gender": null,
-    "category": "sc",
-    "occupation": ["farmer"],
-    "missing_fields": ["gender"]
-  },
-  "schemes": [...]
-}
+# Run the project
+npm start
 ```
 
 ---
 
-## 🔮 Future Enhancements (Architecture is Ready)
+## 📍 Future Improvements
 
-The codebase is structured for easy upgrades:
-
-| Upgrade | Where to change |
-|---|---|
-| Add spaCy NER model | Replace functions in `nlp/processor.py` |
-| Add MongoDB for schemes | Replace `load_schemes()` in `processor.py` |
-| Add ML eligibility scoring | Replace `check_scheme_eligibility()` |
-| Add more schemes | Edit `data/schemes.json` |
-| Add Whisper voice transcription | Replace Web Speech API in `useVoice.js` |
-| Add user authentication | Add middleware in `server/app.py` |
-| Add Hindi language support | Extend `processor.py` keyword lists |
+* 🤖 Integrate AI/ML for smarter recommendations
+* 🌐 Multi-language support
+* 📱 Mobile-friendly UI
+* 🔗 Direct application links for schemes
+* 📊 User dashboard for tracking applied schemes
 
 ---
 
-## 🎯 Schemes Included (21 Total)
+## 🤝 Contributing
 
-1. PM Kisan Samman Nidhi
-2. PM Awas Yojana (Gramin)
-3. PM Ujjwala Yojana
-4. Ayushman Bharat PM-JAY
-5. PM MUDRA Yojana
-6. Sukanya Samriddhi Yojana
-7. Post Matric Scholarship (SC)
-8. Post Matric Scholarship (ST)
-9. Post Matric Scholarship (OBC)
-10. SVAMITVA Scheme
-11. Startup India
-12. Stand Up India
-13. Kisan Credit Card
-14. Beti Bachao Beti Padhao
-15. Mahatma Gandhi NREGA
-16. National Food Security Act (Ration)
-17. PM Shram Yogi Maan-dhan
-18. PM Kaushal Vikas Yojana (Skill India)
-19. Nari Shakti Puraskar
-20. PM Jeevan Jyoti Bima Yojana
-21. PM Suraksha Bima Yojana
+Contributions are welcome!
+Feel free to fork the repo and submit a pull request.
 
 ---
 
-## 📝 License
+## 📜 License
 
-MIT — free to use, modify and distribute.
+This project is licensed under the MIT License.
+
+---
+
+## 👩‍💻 Author
+
+**Sakshi Joshi**
+💡 Passionate about AI/ML and building impactful solutions
+
+---
+
+## ⭐ Support
+
+If you found this project useful, please ⭐ star the repository!
+
+---
+
